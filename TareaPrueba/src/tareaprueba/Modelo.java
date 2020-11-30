@@ -10,5 +10,8 @@ package tareaprueba;
  * @author sebas
  */
 public class Modelo {
+
+    public Modelo() {
+    }
     
 }

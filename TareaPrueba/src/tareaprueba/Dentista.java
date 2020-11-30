@@ -9,6 +9,13 @@ package tareaprueba;
  *
  * @author sebas
  */
-public class Dentista {
+public class Dentista extends Persona{
+
+    public Dentista() {
+    }
+
+    
+    
+    
     
 }

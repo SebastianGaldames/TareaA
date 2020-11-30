@@ -9,6 +9,8 @@ package tareaprueba;
  *
  * @author sebas
  */
-public class Paciente {
-    
+public class Paciente extends Persona{
+    public Paciente(){
+        
+    }
 }

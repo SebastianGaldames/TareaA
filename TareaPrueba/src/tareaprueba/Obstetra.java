@@ -9,6 +9,9 @@ package tareaprueba;
  *
  * @author sebas
  */
-public class Obstetra {
+public class Obstetra extends Persona{
+
+    public Obstetra() {
+    }
     
 }

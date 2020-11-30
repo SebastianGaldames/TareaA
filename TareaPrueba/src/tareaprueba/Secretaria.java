@@ -9,6 +9,9 @@ package tareaprueba;
  *
  * @author sebas
  */
-public class Secretaria {
+public class Secretaria extends Persona{
+
+    public Secretaria() {
+    }
     
 }
