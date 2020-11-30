@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tareaprueba;
+package Modelo;
 
 /**
  *
  * @author sebas
  */
-public class Secretaria extends Persona{
+public class Modelo {
 
-    public Secretaria() {
+    public Modelo() {
     }
     
 }

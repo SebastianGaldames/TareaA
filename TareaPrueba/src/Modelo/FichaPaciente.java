@@ -3,15 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tareaprueba;
+package Modelo;
+
+import Modelo.Persona;
 
 /**
  *
  * @author sebas
  */
-public class MedicoGeneral extends Persona{
+public class FichaPaciente extends Persona{
 
-    public MedicoGeneral() {
+    public FichaPaciente() {
     }
     
 }
