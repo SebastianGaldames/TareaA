@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorInterfaz.FXMLDocumentController">
    <children>
-      <Pane prefHeight="720.0" prefWidth="1280.0">
+      <Pane fx:id="paneInicio" prefHeight="720.0" prefWidth="1280.0">
          <children>
             <ImageView fitHeight="721.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -19,7 +19,74 @@
             </ImageView>
             <PasswordField fx:id="contrasenia" layoutX="591.0" layoutY="432.0" prefHeight="65.0" prefWidth="449.0" />
             <TextField fx:id="nombreUsuario" layoutX="591.0" layoutY="274.0" prefHeight="65.0" prefWidth="449.0" />
-            <Button fx:id="botonIniciar" layoutX="629.0" layoutY="547.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="41.0" prefWidth="207.0" style="-fx-background-color: white;" text="Iniciar" />
+            <Button fx:id="botonIniciar" layoutX="712.0" layoutY="546.0" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="41.0" prefWidth="207.0" style="-fx-background-color: white;" text="Iniciar" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneSecretaria" prefHeight="720.0" prefWidth="1280.0" visible="false">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Secretaria.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="618.0" layoutY="445.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="425.0" style="-fx-background-color: white;" text="Ver documentos" />
+            <Button layoutX="618.0" layoutY="360.0" mnemonicParsing="false" onAction="#inscribirPaciente" prefHeight="41.0" prefWidth="425.0" style="-fx-background-color: white;" text="Inscribir paciente" />
+            <Button layoutX="618.0" layoutY="276.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="425.0" style="-fx-background-color: white;" text="Asignar horas" />
+            <Button layoutX="1146.0" layoutY="665.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="120.0" style="-fx-background-color: white;" text="Atras" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneMedico" prefHeight="720.0" prefWidth="1280.0" visible="false">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Medico.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="603.0" layoutY="236.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="449.0" style="-fx-background-color: white;" text="Ver horario" />
+            <Button layoutX="603.0" layoutY="353.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="449.0" style="-fx-background-color: white;" text="Derivar paciente" />
+            <Button layoutX="603.0" layoutY="489.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="449.0" style="-fx-background-color: white;" text="Ver documentos" />
+            <Button layoutX="1146.0" layoutY="665.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="120.0" style="-fx-background-color: white;" text="Atras" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneDerivarPaciente" prefHeight="720.0" prefWidth="1280.0" visible="false">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Derivacion.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="418.0" layoutY="644.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="120.0" style="-fx-background-color: white;" text="Atras" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneAsignarHora" disable="true" prefHeight="720.0" prefWidth="1280.0" visible="false">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/asignarhora.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="paneEspecialista" prefHeight="720.0" prefWidth="1280.0" visible="false">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Especialista.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="InscripcionesP" prefHeight="720.0" prefWidth="1280.0" visible="false">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Recursos/Incribir.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="nombrePaciente" layoutX="583.0" layoutY="249.0" prefHeight="65.0" prefWidth="449.0" />
+            <TextField fx:id="infoAdicional" layoutX="583.0" layoutY="482.0" prefHeight="74.0" prefWidth="449.0" />
+            <TextField fx:id="rutPaciente" layoutX="583.0" layoutY="360.0" prefHeight="74.0" prefWidth="449.0" />
+            <Button layoutX="1032.0" layoutY="620.0" mnemonicParsing="false" onAction="#Inscripcion" prefHeight="53.0" prefWidth="169.0" style="-fx-background-color: white;" text="Inscribir" />
          </children>
       </Pane>
    </children>
