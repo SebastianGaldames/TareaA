@@ -21,6 +21,8 @@ import javafx.scene.control.TextField;
  */
 public class FXMLDocumentController implements Initializable {
     
+    
+    
     private Label label;
     @FXML
     private PasswordField contrasenia;
@@ -36,6 +38,8 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void iniciarSesion(ActionEvent event) {
+        
+        nombreUsuario.getText();
         
     }
     
