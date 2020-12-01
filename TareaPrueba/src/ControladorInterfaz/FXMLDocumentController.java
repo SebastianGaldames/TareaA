@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ControladorInterfaz;
 
 import java.net.URL;
@@ -14,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 
 /**
  *
@@ -28,6 +24,16 @@ public class FXMLDocumentController implements Initializable {
     private TextField nombreUsuario;
     @FXML
     private Button botonIniciar;
+    @FXML
+    private Pane paneInicio;
+    @FXML
+    private Pane paneSecretaria;
+    @FXML
+    private Pane paneMedico;
+    @FXML
+    private Pane paneDerivarPaciente;
+    @FXML
+    private Pane paneAsignarHora;
         
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -36,6 +42,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void iniciarSesion(ActionEvent event) {
+        
         
     }
     
